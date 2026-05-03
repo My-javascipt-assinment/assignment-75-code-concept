@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Wrap your input */
+.input-wrapper {
+position: relative;
+display: inline-block;
+}
+
+/* Your existing input */
+.input-wrapper input {
+padding: 12px;
+border: none;
+outline: none;
+background: #111;
+color: white;
+position: relative;
+z-index: 1;
+}
+
+/* Animated border */
+.input-wrapper::before {
+content: "";
+position: absolute;
+inset: -2px;
+border-radius: 6px;
+
+background: linear-gradient(
+90deg,
+#00f,
+#0ff,
+#0f0,
+#ff0,
+#f00,
+#00f
+);
+
+background-size: 300% 300%;
+animation: borderRun 4s linear infinite;
+z-index: 0;
+}
+
+/* Inner background (to make border visible only) */
+.input-wrapper::after {
+content: "";
+position: absolute;
+inset: 2px;
+background: #111;
+border-radius: 6px;
+z-index: 0;
+}
+
+/* Animation */
+@keyframes borderRun {
+0% {
+background-position: 0% 50%;
+}
+100% {
+background-position: 300% 50%;
+}
+}
+
+    </style>
+</head>
+<body>
+    
+         <!-- ==================== ques no 3 ========================= -->
+<!-- <div id="parent">
+    <p>hello</p>
+    <h1>good</h1>
+    <h2>not</h2> -->
+    <!-- <span>what are you doing</span>
+</div> -->
+    
+     <!-- ==================== ques no 25 ========================= -->
+<!-- <div id="div"></div> -->
+
+  <!-- ==================== ques no  ========================= -->
+<!-- <ul id="ul"></ul> -->
+
+
+   <!-- ==================== ques no  ========================= -->
+<!-- <div id="parent" onclick="parentClick()" style="border:2px solid red;background-color: blue;width: 800px;height: 500px;display: flex; justify-content: center;align-items: center;">
+    parent div 
+
+    <div id="child" onclick="childClick(event)" style="border: 4px solid black;background-color: seagreen;width: 300px; height: 300px;">
+        child div
+    </div>
+
+</div> -->
+  
+
+    <!-- ==================== ques no  ========================= -->
+<input type="text" class="input-wrapper">
+
+     <!-- ==================== ques no  ========================= -->
+
+<ul id="ul"></ul>
+    
+
+ 
+
+
+<script src="app.js"></script>
+</body>
+</html>
