@@ -613,31 +613,29 @@ hiding private data and accessing it only by specific methods is called
 encapsulation
 
 ======================================= Answer =====================================*/
-//  class BankAccount {
-//     #balance =100;
+ class BankAccount {
+    #balance =100;
 
-//     deposit(amount){
-//         return this.#balance = this.#balance + amount
-//     }
+    deposit(amount){
+        return this.#balance = this.#balance + amount
+    }
 
-//     withDraw(amount){
-//         if(this.#balance >= amount){
-//          return   this.#balance = this.#balance -amount
-//         }
-//         else {
-//             alert('insufficient balanace')
-//         }
-//     }
-//     getBalance(){
-//         return this.#balance
-//     }
-
-
-// }
-// let ans = new BankAccount()
-// ans.deposit(200)
-// ans.withDraw(300)
-// console.log(ans.getBalance())
+    withDraw(amount){
+        if(this.#balance >= amount){
+         return   this.#balance = this.#balance -amount
+        }
+        else {
+            alert('insufficient balanace')
+        }
+    }
+    getBalance(){
+        return this.#balance
+    }
+}
+let ans = new BankAccount()
+ans.deposit(200)
+ans.withDraw(300)
+console.log(ans.getBalance())
 
 /*==================================== Question No 34 =========================================
 
